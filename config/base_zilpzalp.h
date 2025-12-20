@@ -79,7 +79,7 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
 combo_##NAME { \
-    timeout-ms = <20>; \
+    timeout-ms = <35>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
 };
