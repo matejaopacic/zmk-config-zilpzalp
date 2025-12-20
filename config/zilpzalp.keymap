@@ -54,7 +54,7 @@
 
             bindings = <
                             &kp LS(SQT)          &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &none          &none          &none          &none
-                &kp EXCL       &kp AT               &kp HASH              &kp DOLLAR             &kp LS(BACKSLASH)       &none          &kp AMPERSAND   &kp ASTERISK   &kp PERCENT    &kp CARET
+                &kp EXCL       &kp EQUAL               &kp HASH              &kp DOLLAR             &kp LS(BACKSLASH)       &none          &kp AMPERSAND   &kp ASTERISK   &kp PERCENT    &kp CARET
                             &kp GRAVE            &kp DQT               &kp UNDERSCORE                                          &kp BACKSLASH  &kp PIPE       &kp EQUAL
                                                             &kp TILDE     &trans                &trans                  &trans
             >;
