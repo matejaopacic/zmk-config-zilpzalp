@@ -215,11 +215,11 @@ combo_##NAME { \
             // hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23>;
         };
 
-        dotcol: dot_colon {
+        comsem: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COL";
+            label = "SEMI_COL";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&kp SEMI>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         comsem: comma_semicolon {
