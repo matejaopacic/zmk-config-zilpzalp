@@ -53,17 +53,17 @@
             label = "SYM";
 
             bindings = <
-                /* 0–7 */
-                &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(RA(LBRC))   &kp LS(RA(RBRC))   &kp RA(LBRC)      &kp RA(RBRC)
+                /* 0–7  |  Ć Č Š Đ  ||  { } [ ]  */
+                &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(LBRC)        &kp LS(RBRC)        &kp LBRC           &kp RBRC
 
-                /* 8–17 */
-                &kp EXCL               &kp LS(DOT)            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)  &kp LS(N7)         &kp PLUS          &kp LS(N8)        &kp PERCENT       &kp AMPERSAND
+                /* 8–17 |  ! : # $ Ž ||  ' + ( % &  */
+                &kp EXCL               &kp LS(DOT)            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &none               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp LS(N8)         &kp PERCENT
 
-                /* 18–23 */
-                &kp LESS_THAN          &kp GREATER_THAN       &kp SLASH                                      &kp LS(N8)         &kp LS(N9)         &kp PLUS
+                /* 18–23 |  < > ?     ||  ( ) + &  */
+                &kp NUBS               &kp LS(NUBS)           &kp LS(SLASH)                                   &kp LS(N8)          &kp LS(N9)          &kp KP_PLUS
 
-                /* 24–27 */
-                                            &kp EQUAL        &trans                 &trans                 &trans
+                /* 24–27 |  = TRNS || TRNS TRNS  */
+                                            &kp KP_EQUAL     &trans                 &trans                 &trans
             >;
         };
 #ifdef ZILPZALP_BLE_FLAG
