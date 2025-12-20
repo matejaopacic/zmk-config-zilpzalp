@@ -53,10 +53,17 @@
             label = "SYM";
 
             bindings = <
-                            &kp LS(SQT)          &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &none          &none          &none          &none
-                &kp EXCL       &kp GT               &kp HASH              &kp DOLLAR             &kp LS(BACKSLASH)       &none          &kp EQUAL   &kp ASTERISK   &kp PERCENT    &kp CARET
-                            &kp GRAVE            &kp DQT               &kp UNDERSCORE                                          &kp BACKSLASH  &kp PIPE       &kp EQUAL
-                                                            &kp TILDE     &trans                &trans                  &trans
+                /* 0–7 */
+                &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(RA(LBRC))   &kp LS(RA(RBRC))   &kp RA(LBRC)      &kp RA(RBRC)
+
+                /* 8–17 */
+                &kp EXCL               &kp LS(DOT)            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)  &kp LS(N7)         &kp PLUS          &kp LS(N8)        &kp PERCENT       &kp AMPERSAND
+
+                /* 18–23 */
+                &kp LESS_THAN          &kp GREATER_THAN       &kp SLASH                                      &kp LS(N8)         &kp LS(N9)         &kp PLUS
+
+                /* 24–27 */
+                                            &kp EQUAL        &trans                 &trans                 &trans
             >;
         };
 #ifdef ZILPZALP_BLE_FLAG
