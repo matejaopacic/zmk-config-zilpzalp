@@ -209,9 +209,9 @@ combo_##NAME { \
         };
         comsem: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "SEMI_COL";
+            label = "COM_SEM";
             #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp SEMI>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
