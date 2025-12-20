@@ -209,7 +209,7 @@ combo_##NAME { \
         };
         comsem: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "COM_SEM";
+            label = "SEMI_COL";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
