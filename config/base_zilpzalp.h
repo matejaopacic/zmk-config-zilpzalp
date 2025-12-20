@@ -211,7 +211,7 @@ combo_##NAME { \
             compatible = "zmk,behavior-mod-morph";
             label = "SEMI_COL";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&kp SEMI>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
