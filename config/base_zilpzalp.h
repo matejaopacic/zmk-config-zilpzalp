@@ -75,21 +75,6 @@
     };
   };
 };
-/ {
-  macros {
-    semi_key: semi_key {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = < &kp LT >;   // fizički taster za ;
-    };
-
-    colon_key: colon_key {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = < &kp GT >;   // fizički taster za :
-    };
-  };
-};
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
@@ -217,15 +202,18 @@ combo_##NAME { \
 
         comsem: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "SEMI_COL";
+            label = "COM_SEMI";
             #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp SEMI>;
+            bindings = <&kp COMMA>, <&kp LT>;   /* Shift+,  ->  ;  (tvoj LT) */
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        comsem: comma_semicolon {
-          compatible = "zmk,behavior-mod-morph";
-          bindings = <&kp COMMA>, <&colon_key>;
-          mods = <(MOD_LSFT|MOD_RSFT)>;
-      };
+
+        dotcol: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COL";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp GT>;     /* Shift+.  ->  :  (tvoj GT) */
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
