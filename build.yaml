@@ -2,5 +2,5 @@
 include:
   - board: xiao_rp2040
     shield: zilpzalp
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: zilpzalp_ble
