@@ -6,7 +6,7 @@
 #endif
 
 #include "base_zilpzalp.h"
-
+#include "unicode.dtsi"
 
 // zilpzalp key numbers
 //     __________________________  __________________________
