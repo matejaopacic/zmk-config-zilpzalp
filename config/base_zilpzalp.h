@@ -101,6 +101,7 @@ combo_##NAME { \
 //        COMBO(enter, &kp ENTER, 21 22 23)
         COMBO(enter, &kp ENTER, 21 23)
         COMBO(esc, &kp ESC, 19 20)
+        COMBO(esc, &kp UNDERSCORE, 17 23)
 /* parentheticals */
         COMBO(lbrc, &kp LBRC, 0 9)
         COMBO(lbkt, &kp LBKT, 1 10)
