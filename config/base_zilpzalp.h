@@ -109,9 +109,7 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <
-        &macro_press   &kp LALT
-        &macro_tap     &kp N8
-        &macro_release &kp LALT
+        &macro_tap &kp LA(LBKT)
       >;
     };
 
@@ -120,9 +118,7 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <
-        &macro_press   &kp LALT
-        &macro_tap     &kp N9
-        &macro_release &kp LALT
+        &macro_tap &kp LA(RBKT)
       >;
     };
   };
@@ -138,10 +134,19 @@
       >;
     };
     macro_amp: macro_amp {
+      label = "Ampersand";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <
         &macro_tap &kp LS(N6)
+      >;
+    };
+    macro_at: macro_at {
+      label = "AT @";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <
+        &macro_tap &kp LS(LA(N2))
       >;
     };
   };
