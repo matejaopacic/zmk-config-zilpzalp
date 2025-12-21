@@ -55,10 +55,10 @@
 
             bindings = <
                 /* 0–7  |  Ć Č Š Đ  ||  { } [ ]  */
-                &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(LA(LBRC))        &kp LS(LA(RBRC))        &kp LA(LBRC)           &kp LA(RBRC)
+                &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(LA(LBRC))        &kp LS(LA(RBRC))        &macro_lbkt           &macro_rbkt
 
                 /* 8–17 |  ! : # $ Ž ||  ' + ( % &  */
-                &kp EXCL               &kp LS(DOT)            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &none               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp LS(N8)         &kp PERCENT
+                &kp EXCL               &kp DQT            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &none               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp PERCENT         &kp AMPERSAND
 
                 /* 18–23 |  < > ?     ||  ( ) + &  */
                 &macro_lt               &macro_gt           &kp UNDERSCORE                                   &kp LS(N8)          &kp LS(N9)          &kp KP_PLUS

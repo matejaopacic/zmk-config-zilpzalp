@@ -102,6 +102,31 @@
     };
   };
 };
+/ {
+  macros {
+    macro_lbkt: macro_lbkt {
+      label = "LBKT [";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <
+        &macro_press   &kp LALT
+        &macro_tap     &kp N8
+        &macro_release &kp LALT
+      >;
+    };
+
+    macro_rbkt: macro_rbkt {
+      label = "RBKT ]";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <
+        &macro_press   &kp LALT
+        &macro_tap     &kp N9
+        &macro_release &kp LALT
+      >;
+    };
+  };
+};
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
