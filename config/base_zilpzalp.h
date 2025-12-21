@@ -10,12 +10,6 @@
 // &lt {
 //     quick_tap_ms = <170>;
 // };
-/ {
-  unicode {
-    compatible = "zmk,unicode";
-    default-mode = <UC_MODE_MACOS>;
-  };
-};
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;

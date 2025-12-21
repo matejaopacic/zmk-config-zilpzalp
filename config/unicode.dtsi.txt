@@ -1,0 +1,6 @@
+/ {
+    uc: unicode {
+        compatible = "zmk,behavior-unicode";
+        default-mode = <UC_MODE_MACOS>;
+    };
+};
