@@ -1,7 +1,8 @@
 #ifdef ZILPZALP_BLE_FLAG
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "unicode.dtsi"
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/unicode.h>
 #endif
 
 #include "base_zilpzalp.h"
@@ -61,7 +62,7 @@
                 &kp EXCL               &kp LS(DOT)            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &none               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp LS(N8)         &kp PERCENT
 
                 /* 18–23 |  < > ?     ||  ( ) + &  */
-                &u 0x003C 0               &u 0x003E 0           &kp UNDERSCORE                                   &kp LS(N8)          &kp LS(N9)          &kp KP_PLUS
+                &uc 0x003C 0               &uc 0x003E 0           &kp UNDERSCORE                                   &kp LS(N8)          &kp LS(N9)          &kp KP_PLUS
 
                 /* 24–27 |  = TRNS || TRNS TRNS  */
                                             &kp KP_EQUAL     &trans                 &trans                 &trans
@@ -102,3 +103,10 @@
 //    \    20  | 21  | 22  |     ||     |  23 |  24 |  25   /
 //                \    26  | 27  /\  28 |  29    /
 //                 --------------  --------------
+
+/ {
+    unicode {
+        compatible = "zmk,unicode";
+        default-mode = <UC_MODE_MACOS>;
+    };
+};
