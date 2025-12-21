@@ -127,6 +127,16 @@
     };
   };
 };
+macro_dquote: macro_dquote {
+  label = "Double Quote";
+  compatible = "zmk,behavior-macro";
+  #binding-cells = <0>;
+  bindings = <
+    &macro_press   &kp LALT
+    &macro_tap     &kp W
+    &macro_release &kp LALT
+  >;
+};
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
