@@ -134,9 +134,14 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <
-        &macro_press   &kp LALT
-        &macro_tap     &kp W
-        &macro_release &kp LALT
+        &macro_tap &kp LS(N2)
+      >;
+    };
+    macro_amp: macro_amp {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <
+        &macro_tap &kp LS(N6)
       >;
     };
   };
