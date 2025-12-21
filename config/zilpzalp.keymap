@@ -60,7 +60,7 @@
                 &kp EXCL               &kp LS(DOT)            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &none               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp LS(N8)         &kp PERCENT
 
                 /* 18–23 |  < > ?     ||  ( ) + &  */
-                &kp NUBS               &kp LS(NUBS)           &kp LS(SLASH)                                   &kp LS(N8)          &kp LS(N9)          &kp KP_PLUS
+                &kp NUBS               &kp LS(NUBS)           &kp UNDERSCORE                                   &kp LS(N8)          &kp LS(N9)          &kp KP_PLUS
 
                 /* 24–27 |  = TRNS || TRNS TRNS  */
                                             &kp KP_EQUAL     &trans                 &trans                 &trans
