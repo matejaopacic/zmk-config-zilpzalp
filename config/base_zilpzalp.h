@@ -75,6 +75,33 @@
     };
   };
 };
+/ {
+  macros {
+    macro_lt: macro_lt {
+      label = "LT <";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <
+        &macro_press   &kp LALT
+        &macro_tap     &kp NUBS
+        &macro_release &kp LALT
+      >;
+    };
+
+    macro_gt: macro_gt {
+      label = "GT >";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <
+        &macro_press   &kp LALT
+        &macro_press   &kp LSHFT
+        &macro_tap     &kp NUBS
+        &macro_release &kp LSHFT
+        &macro_release &kp LALT
+      >;
+    };
+  };
+};
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
