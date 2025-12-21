@@ -54,7 +54,7 @@
 
             bindings = <
                 /* 0–7  |  Ć Č Š Đ  ||  { } [ ]  */
-                &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(LBRC)        &kp LS(RBRC)        &kp LBRC           &kp RBRC
+                &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(LA(LBRC))        &kp LS(LA(RBRC))        &kp LBRC           &kp RBRC
 
                 /* 8–17 |  ! : # $ Ž ||  ' + ( % &  */
                 &kp EXCL               &kp LS(DOT)            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &none               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp LS(N8)         &kp PERCENT
