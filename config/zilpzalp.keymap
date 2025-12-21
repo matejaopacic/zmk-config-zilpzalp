@@ -58,7 +58,7 @@
                 &kp LS(SQT)            &kp LS(SEMICOLON)      &kp LS(LEFT_BRACKET)   &kp LS(RIGHT_BRACKET)   &kp LS(LA(LBRC))        &kp LS(LA(RBRC))        &macro_lbkt           &macro_rbkt
 
                 /* 8–17 |  ! : # $ Ž ||  ' + ( % &  */
-                &kp EXCL               &macro_dquote            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &AMPERSAND               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp PERCENT         &kp AMPERSAND
+                &kp EXCL               &macro_dquote            &kp HASH               &kp DOLLAR              &kp LS(BACKSLASH)   &kp AMPERSAND               &kp LS(BACKSLASH)  &kp KP_PLUS        &kp PERCENT         &kp AMPERSAND
 
                 /* 18–23 |  < > ?     ||  ( ) + &  */
                 &macro_lt               &macro_gt           &kp UNDERSCORE                                   &kp LS(N8)          &kp LS(N9)          &kp KP_PLUS
