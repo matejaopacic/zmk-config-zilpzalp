@@ -31,6 +31,19 @@
 };
 / {
   macros {
+    macro_bt_reconnect_2: macro_bt_reconnect_2 {
+      label = "BT reconnect slot 2";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <
+        &macro_tap &bt BT_DISC
+        &macro_tap &bt BT_SEL 2
+      >;
+    };
+  };
+};
+/ {
+  macros {
     ipad_tile_left: ipad_tile_left {
       label = "iPad Tile Left";
       compatible = "zmk,behavior-macro";
