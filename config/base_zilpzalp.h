@@ -29,10 +29,10 @@
         };
     };
 };
+#ifdef ZILPZALP_BLE_FLAG
 / {
   macros {
     macro_bt_reconnect_2: macro_bt_reconnect_2 {
-      label = "BT reconnect slot 2";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <
@@ -42,6 +42,7 @@
     };
   };
 };
+#endif
 / {
   macros {
     ipad_tile_left: ipad_tile_left {
